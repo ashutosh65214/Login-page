@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Container/Css/Common.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="logo">
+                
+                <asp:Image ID="ImgLogo" CssClass="logo" ImageUrl="~/Container/Image/eClerx.png" runat="server" />
+            </div>
+            <div class="sideBar">
+              
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </form>
+</body>
+</html>
