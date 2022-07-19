@@ -24,7 +24,7 @@ namespace WebApplication1
             }
             if (!IsPostBack)
             {
-                lblFirstName.Text = $"Welcome,{Session["s2"]}";
+                lblFirstName.Text = $"Welcome  {Session["s2"]}";
                 using (con = new SqlConnection(ConfigurationManager.ConnectionStrings["HRCon"].ConnectionString))
                 {
                     using (adapter = new SqlDataAdapter("select * from Department", con))

@@ -39,8 +39,11 @@ namespace WebApplication1
                         obj.Open();
                     }
                     cmd.ExecuteNonQuery();
+
+                   
                 }
             }
+            Response.Write("<script>alert('Message Sent....')</script>");
         }
     }
 }

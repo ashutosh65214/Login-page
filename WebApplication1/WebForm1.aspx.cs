@@ -41,8 +41,10 @@ namespace WebApplication1
                         cmd.ExecuteNonQuery();
                     }
                 }
+                Response.Redirect("Login.aspx");
 
             }
+
         }
 
         protected void BtnReset_Click(object sender, EventArgs e)
